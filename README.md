@@ -1,4 +1,4 @@
 # OPT4CYAN_Control
 ## Santa Olalla
-  ![Rrs](https://github.com/OPT4CYANproject/OPT4CYAN_Control.git/Hondon_del_Burro_30_2016301_MPH_P_.jpg)
+  ![Rrs](Santa_Olalla_Rrs_m7_2020279.jpg)
 ### NDCI
