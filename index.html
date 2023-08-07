@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página con Pestañas</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .tab {
+    display: none;
+  }
+  .tab-label {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+  .tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+  }
+  .active-tab {
+    background-color: #fff;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="tab-container">
+  <div class="tab-labels">
+    <div class="tab-label active-tab" onclick="changeTab(0)">Primavera</div>
+    <div class="tab-label" onclick="changeTab(1)">Verano</div>
+    <div class="tab-label" onclick="changeTab(2)">Otoño</div>
+    <div class="tab-label" onclick="changeTab(3)">Invierno</div>
+  </div>
+  <div class="tab-content">
+    <div class="tab" id="tab0">
+      <div class="grid-container">
+        <div class="grid-item"><img src="imagen1_primavera.jpg" alt="Primavera 1"></div>
+        <div class="grid-item"><img src="imagen2_primavera.jpg" alt="Primavera 2"></div>
+        <div class="grid-item"><img src="imagen3_primavera.jpg" alt="Primavera 3"></div>
+        <div class="grid-item"><img src="imagen4_primavera.jpg" alt="Primavera 4"></div>
+      </div>
+    </div>
+    <div class="tab" id="tab1">
+      <div class="grid-container">
+        <div class="grid-item"><img src="imagen1_verano.jpg" alt="Verano 1"></div>
+        <div class="grid-item"><img src="imagen2_verano.jpg" alt="Verano 2"></div>
+        <div class="grid-item"><img src="imagen3_verano.jpg" alt="Verano 3"></div>
+        <div class="grid-item"><img src="imagen4_verano.jpg" alt="Verano 4"></div>
+      </div>
+    </div>
+    <div class="tab" id="tab2">
+      <div class="grid-container">
+        <div class="grid-item"><img src="imagen1_otonio.jpg" alt="Otoño 1"></div>
+        <div class="grid-item"><img src="imagen2_otonio.jpg" alt="Otoño 2"></div>
+        <div class="grid-item"><img src="imagen3_otonio.jpg" alt="Otoño 3"></div>
+        <div class="grid-item"><img src="imagen4_otonio.jpg" alt="Otoño 4"></div>
+      </div>
+    </div>
+    <div class="tab" id="tab3">
+      <div class="grid-container">
+        <div class="grid-item"><img src="imagen1_invierno.jpg" alt="Invierno 1"></div>
+        <div class="grid-item"><img src="imagen2_invierno.jpg" alt="Invierno 2"></div>
+        <div class="grid-item"><img src="imagen3_invierno.jpg" alt="Invierno 3"></div>
+        <div class="grid-item"><img src="imagen4_invierno.jpg" alt="Invierno 4"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function changeTab(tabIndex) {
+    const tabs = document.querySelectorAll('.tab');
+    const tabLabels = document.querySelectorAll('.tab-label');
+    
+    tabs.forEach(tab => tab.style.display = 'none');
+    tabLabels.forEach(label => label.classList.remove('active-tab'));
+    
+    tabs[tabIndex].style.display = 'block';
+    tabLabels[tabIndex].classList.add('active-tab');
+  }
+
+  // Mostrar la primera pestaña por defecto al cargar la página
+  changeTab(0);
+</script>
+
+</body>
+</html>
