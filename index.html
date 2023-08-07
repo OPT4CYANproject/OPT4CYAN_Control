@@ -47,6 +47,16 @@
     max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
     height: auto; /* Mantén la proporción de aspecto */
   }
+  /* Estilos para la sección de 2x2 */
+  .grid-container-2x2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, 1fr); /* 2 filas */
+    }
+    /* Estilos para la sección de 2x2 */
+  .grid-container-2x1 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(1, 1fr); /* 2 filas */
+  }
 </style>
 </head>
 <body>
@@ -108,7 +118,7 @@
       </div>
     </div>
     <div class="tab" id="tab5">
-      <div class="grid-container">
+      <div class="grid-container-2x2">
         <div class="grid-item"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Santa_Olalla/Sentinel_2.png" alt="Sentinel 2"></div>
         <div class="grid-item"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Fuente_Duque/Sentinel_2.png" alt="Sentinel 2"></div>
         <div class="grid-item"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Lucio_del_Rey/Sentinel_2.png" alt="Sentinel 2"></div>
@@ -116,7 +126,7 @@
       </div>
     </div>
     <div class="tab" id="tab6">
-      <div class="grid-container">
+      <div class="grid-container-2x1">
         <div class="grid-item"><img src="imagen1_primavera.jpg" alt="Chlorophyll"></div>
         <div class="grid-item"><img src="imagen2_primavera.jpg" alt="Cyanobacteria"></div>
       </div>
