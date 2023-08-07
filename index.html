@@ -11,18 +11,24 @@
   .tab {
     display: none;
   }
+  .tab-labels {
+    display: flex;
+    justify-content: space-between;
+  }
   .tab-label {
     cursor: pointer;
+    flex: 1;
     padding: 10px 20px;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
+    text-align: center;
   }
   .tab-content {
     display: none;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
   }
   .active-tab {
     background-color: #fff;
@@ -94,7 +100,7 @@
         <div class="grid-item"><img src="imagen4_primavera.jpg" alt="Sentinel 2"></div>
       </div>
     </div>
-    <div class="tab" id="tab3">
+    <div class="tab" id="tab4">
       <div class="grid-container">
         <div class="grid-item"><img src="imagen1_primavera.jpg" alt="Chlorophyll"></div>
         <div class="grid-item"><img src="imagen2_primavera.jpg" alt="Cyanobacteria"></div>
