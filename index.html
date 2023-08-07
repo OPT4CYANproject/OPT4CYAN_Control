@@ -35,13 +35,17 @@
   }
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   .grid-item {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+  }
+  .grid-item img {
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantén la proporción de aspecto */
   }
 </style>
 </head>
