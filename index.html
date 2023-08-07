@@ -8,30 +8,30 @@
   body {
     font-family: Arial, sans-serif;
   }
+  .tab-container {
+    width: 100%;
+  }
   .tab {
     display: none;
   }
   .tab-labels {
     display: flex;
     justify-content: space-between;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
   .tab-label {
     cursor: pointer;
     flex: 1;
     padding: 10px 20px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     text-align: center;
-  }
-  .tab-content {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
   .active-tab {
     background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   .grid-container {
     display: grid;
@@ -63,6 +63,7 @@
       </div>
     </div>
     <div class="tab" id="tab1">
+      <div class="grid-container">
         <div class="grid-item"><img src="https://github.com/OPT4CYANproject/OPT4CYAN_Control/blob/0f5056e10fa4b804782f2c735aa61fe867fe86ce/Plots/Santa_Olalla/Rrs_year.jpg" alt="Santa Olalla año Rrs"></div>
         <div class="grid-item"><img src="https://github.com/OPT4CYANproject/OPT4CYAN_Control/blob/0f5056e10fa4b804782f2c735aa61fe867fe86ce/Plots/Santa_Olalla/Rrs_month.jpg" alt="Santa Olalla mes Rrs"></div>
         <div class="grid-item"><img src="https://github.com/OPT4CYANproject/OPT4CYAN_Control/blob/0f5056e10fa4b804782f2c735aa61fe867fe86ce/Plots/Santa_Olalla/Rrs_day.jpg" alt="Santa Olalla dia Rrs"></div>
@@ -112,6 +113,7 @@
       </div>
     </div>
   </div>
+</div>
 
 <script>
   function changeTab(tabIndex) {
