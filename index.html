@@ -92,8 +92,23 @@
  .grid-item:hover {
     transform: scale(1.1); /* Puedes ajustar el valor para cambiar el nivel de ampliación */
   }
-  .grid-item img {
+ .grid-item img {
     max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantén la proporción de aspecto */
+  }
+ .grid-item-logo {
+    border: 1px;
+    padding: 10px;
+    text-align: center;
+    display: flex; /* Aplica flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+ .grid-item-logo:hover {
+    transform: scale(1.1); /* Puedes ajustar el valor para cambiar el nivel de ampliación */
+  }
+  .grid-item-logo img {
+    max-width: 70%; /* Ajusta el tamaño máximo de las imágenes */
     height: auto; /* Mantén la proporción de aspecto */
   }
 </style>
@@ -101,7 +116,7 @@
 <div class="tab-container">
   <div class="tab-labels_title">
     <div class="tab-label_title"> DOÑANA NATURAL PARK OPT4CYAN PROJECT</div>
-    <div class="grid-item"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/logos.jpg" alt="LOGOS"></div>
+    <div class="grid-item-logo"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/logos.jpg" alt="LOGOS"></div>
 </div>
 <div class="tab-container">
   <div class="tab-labels">
