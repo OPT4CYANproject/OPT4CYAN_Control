@@ -96,8 +96,11 @@
     max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
     height: auto; /* Mantén la proporción de aspecto */
   }
-  .grid-item_logo:hover {
-    transform: scale(1.1); /* Puedes ajustar el valor para cambiar el nivel de ampliación */
+  .grid-item_logo: {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 50vh; /* Opcional: ajusta la altura según tus necesidades */
   }
   .grid-item_logo img {
     max-width: 70%; /* Ajusta el tamaño máximo de las imágenes */
