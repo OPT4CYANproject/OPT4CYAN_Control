@@ -96,11 +96,6 @@
     height: auto; /* Mantén la proporción de aspecto */
   }
 /* camaras */
-  .grid-container-video {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
   .video-container {
     position: relative;
     width: 100%;
@@ -136,7 +131,6 @@
   <div class="tab-content">
     <div class="tab" id="tab0">
     <!-- Añadir el video incrustado aquí -->
-      <div class="grid-item">
         <div class="video-container">
             <div class="grid-container-2x1">
                 <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
@@ -149,7 +143,6 @@
                 <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-      </div>
     </div>
     <div class="tab" id="tab1">
       <div class="grid-container">
