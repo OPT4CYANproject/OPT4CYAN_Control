@@ -96,10 +96,14 @@
     height: auto; /* Mantén la proporción de aspecto */
   }
 /* camaras */
+  .grid-container-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   .video-container {
     position: relative;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
     max-width: 560px;
     }
   .video-placeholder {
@@ -131,21 +135,19 @@
   </div>
   <div class="tab-content">
     <div class="tab" id="tab0">
-      <div class="grid-container-1x1">
-        <div class="grid-item"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/symbol_Alert.jpg" alt="Symbol Alert"></div>
-      </div>
+      <div class="grid-container-video">
     <!-- Añadir el video incrustado aquí -->
-      <div class="grid-item">
-        <div class="video-container">
-            <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
-            <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
-            <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
-            <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
-            <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+          <div class="grid-item">
+            <div class="video-container">
+                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
+                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
+                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
+                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.png" alt="Preview Image" onclick="playVideo()">
+                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
     </div>
     <div class="tab" id="tab1">
       <div class="grid-container">
