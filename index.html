@@ -231,6 +231,12 @@
     tabs[tabIndex].style.display = 'block';
     tabLabels[tabIndex].classList.add('active-tab');
   }
+  function playVideo() {
+    var iframe = document.querySelector('.video-iframe');
+    var placeholder = document.querySelector('.video-placeholder');
+    placeholder.style.display = 'none';
+    iframe.style.display = 'block';
+  }
 
   // Mostrar la primera pestaña por defecto al cargar la página
   changeTab(0);
