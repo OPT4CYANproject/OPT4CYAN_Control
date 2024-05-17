@@ -95,6 +95,24 @@
     max-width: 70%; /* Ajusta el tamaño máximo de las imágenes */
     height: auto; /* Mantén la proporción de aspecto */
   }
+/* camaras */
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    }
+  .video-placeholder {
+    width: 100%;
+    cursor: pointer;
+    }
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    }
 </style>
 <body>
 <div class="tab-container">
@@ -118,9 +136,11 @@
       </div>
     <!-- Añadir el video incrustado aquí -->
         <div class="grid-item">
-            <iframe width="560" height="315" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-container">
+                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla_ok.jpg" alt="Preview Image" onclick="playVideo()">
+                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-    </div>
     <div class="tab" id="tab1">
       <div class="grid-container">
         <div class="grid-item">
