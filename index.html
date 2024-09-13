@@ -17,39 +17,54 @@
   .tab {
     display: none;
   }
-  .tab-labels {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
   .tab-label {
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
+    font-size: 18px; /* Tamaño de letra */
+    font-weight: bold; /* Negrita */
     cursor: pointer;
     flex: 1;
-    padding: 10px 20px;
+    padding: 20px 30px;
     text-align: center;
     background-color: black; /* Cambia el color de fondo */
     color: #8a9597; /* Cambia el color del texto */
     border: 1px solid #8a9597; /* Agrega el borde griis */
   }
-  .active-tab {
-    background-color: #fff;
-    border: 1px solid #ccc;
+  .small-text {
+    font-size: 12px; /* Cambia el tamaño de la fuente */
+    font-style: bolf; /* Hace que el texto sea cursiva */
+    color: #8a9597; /* Color del texto más claro */
+  } 
+  .tab-labels {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    border: 5px solid #f2f2f2;
     border-radius: 5px;
+    margin-bottom: 5px;
   }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  .grid-item-home {
+    text-align: center;
+    display: flex; /* Aplica flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+  .grid-item-home img {
+    width: 70%; /* La imagen ocupará el 100% del ancho disponible */
+  }
+  .grid-item-home:hover {
+    transform: scale(1.1); /* Puedes ajustar el valor para cambiar el nivel de ampliación */
   }
   .grid-container-2x1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas */
     gap: 20px;
    }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
   .grid-item {
     border: 1px solid #ccc;
     padding: 10px;
@@ -66,12 +81,7 @@
     max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
     height: auto; /* Mantén la proporción de aspecto */
   }
- .grid-item-home {
-    text-align: center;
-    display: flex; /* Aplica flexbox para centrar contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-  }
+ 
  .grid-item-home img {
     max-width: 500%; /* Ajusta el tamaño máximo de las imágenes */
   }
@@ -86,26 +96,16 @@
     max-width: 70%; /* Ajusta el tamaño máximo de las imágenes */
     height: auto; /* Mantén la proporción de aspecto */
   }
-/* camaras */
-  .video-container {
-    position: relative;
-    width: 100%;
-    max-width: 560px;
-    }
-  .video-placeholder {
-    width: 100%;
-    cursor: pointer;
-    }
-  .video-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    }
+  .active-tab {
+    background-color:  #000000;
+    border: 5px solid  #00A9FF;
+    color: #00A9FF; /* Cambia el color del texto para la pestaña activa */
+    border-radius: 3px;
+  }
+
 </style>
 <body>
+    <!-- Aqui se hacen las pestañas selectoras -->
 <div class="tab-container">
   <div class="tab-labels">
     <div class="tab-label" onclick="changeTab(0)">Home Page</div>
@@ -117,20 +117,20 @@
   <div class="tab-content">
     <div class="tab" id="tab0">
     <!-- Añadir el video incrustado aquí -->
-     <div class="grid-item-home">
-        <div class="video-container">
-            <div class="grid-container-2x1">
-                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla.png" alt="Preview Image" onclick="playVideo()">
-                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                 <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Hondon_del_Burro.png" alt="Preview Image" onclick="playVideo()">
-                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Lucio_del_Rey.png" alt="Preview Image" onclick="playVideo()">
-                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img class="video-placeholder" src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Fuente_duque.png" alt="Preview Image" onclick="playVideo()">
-                <iframe class="video-iframe" src="https://streaming-camaras.ebd.csic.es/cam16.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="grid-container-2x1">
+            <div class="grid-item-home">
+                <img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Santa_Olalla.png" alt="Santa Olalla Alert">
+            </div>
+            <div class="grid-item-home">
+                <img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Hondon_del_Burro.png" alt="Hondon del Burro Alert">
+            </div>
+            <div class="grid-item-home">
+                 <img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Lucio_del_Rey.png" alt="Lucio del Rey Alert">
+            </div>
+            <div class="grid-item-home">
+                <img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/Fuente_duque.png" alt="Fuente duque Alert">
             </div>
           </div>
-     </div>
     </div>
     <div class="tab" id="tab1">
       <div class="grid-container">
