@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPT4CYAN Doñana Natural Park</title>
+    <title>Cyanobacterial Bloom Detection Tool</title>
 </head>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #000000; /* Cambia el color de fondo a negro */
-    color: white; /* Cambia el color del texto a blanco */
+    background-color: #000000; /* Color de fondo a negro */
+    color: #8a9597; /* Color del texto a gris */
   }
   .tab-container {
     width: 100%;
@@ -25,33 +25,15 @@
     border-radius: 5px;
     margin-bottom: 10px;
   }
-  .tab-labels_title {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 26px;
-  }
+  
   .tab-label {
     cursor: pointer;
     flex: 1;
     padding: 10px 20px;
     text-align: center;
-    background-color: #9af59d; /* Cambia el color de fondo */
-    color: black; /* Cambia el color del texto */
-    border: 1px solid black; /* Agrega el borde negro */
-  }
-  .tab-label_title {
-    cursor: pointer;
-    flex: 1;
-    padding: 10px 20px;
-    text-align: center;
-    background-color: #000000; /* Cambia el color de fondo */
-    color: white; /* Cambia el color del texto */
-    border: 1px solid black; /* Agrega el borde negro */
-    font-weight: bold; /* Agrega negrita al texto */
+    background-color: black; /* Cambia el color de fondo */
+    color: #8a9597; /* Cambia el color del texto */
+    border: 1px solid #8a9597; /* Agrega el borde griis */
   }
   .active-tab {
     background-color: #fff;
@@ -125,17 +107,12 @@
 </style>
 <body>
 <div class="tab-container">
-  <div class="tab-labels_title">
-    <div class="tab-label_title"> DOÑANA NATURAL PARK OPT4CYAN PROJECT</div>
-    <div class="grid-item-logo"><img src="https://raw.githubusercontent.com/OPT4CYANproject/OPT4CYAN_Control/main/Plots/Alert/logos.jpg" alt="LOGOS"></div>
-</div>
-<div class="tab-container">
   <div class="tab-labels">
-    <div class="tab-label" onclick="changeTab(0)">Home</div>
-    <div class="tab-label" onclick="changeTab(1)">Santa Olalla</div>
-    <div class="tab-label" onclick="changeTab(2)">Fuente Duque</div>
-    <div class="tab-label" onclick="changeTab(3)">Lucio del Rey</div>
-    <div class="tab-label" onclick="changeTab(4)">Hondon del Burro</div>
+    <div class="tab-label" onclick="changeTab(0)">Home Page</div>
+    <div class="tab-label" onclick="changeTab(1)">S1 <span class="small-text">Santa Olalla</span></div>
+    <div class="tab-label" onclick="changeTab(2)">S2 <span class="small-text">Lucio del Rey</span></div>
+    <div class="tab-label" onclick="changeTab(3)">S3 <span class="small-text">Hondon del Burro</span></div>
+    <div class="tab-label" onclick="changeTab(4)">S4 <span class="small-text">Fuente Duque</span></div>
   </div>
   <div class="tab-content">
     <div class="tab" id="tab0">
